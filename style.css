@@ -1,0 +1,137 @@
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --white: #fff;
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", serif;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a{
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    transition: transform 0.2s, color 0.2s, border-bottom 0.2s, padding-bottom 0.2s;
+    position: relative;
+}
+
+.navbar a::after { 
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    bottom: -0.1rem; 
+    left: 0; width: 100%; 
+    border-bottom: 0.1rem solid transparent; 
+    transition: border-bottom-color 0.2s; 
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    transform: scale(1.25);
+}
+.navbar a:hover::after { 
+    border-bottom-color: var(--main-color); 
+}
+
+.icons i{
+    color: var(--white);
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 2rem;
+    transition: transform 0.2s;
+}
+
+.icons i:hover{
+   transform: scale(1.25);
+   
+}
+
+.btn{
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block; /* Remove a quebra de linha */
+}
+
+.home-container{
+    background: url("./Img/grãos_café.jpg");
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o container */
+    
+}
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.content{
+    max-width: 60rem;
+
+}
+
+.content h3{
+    color: #fff;
+    font-size: 6rem;
+}
+
+.content p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    
+}
+
+.title span{
+    color: var(--main-color);
+}
