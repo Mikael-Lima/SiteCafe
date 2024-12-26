@@ -43,6 +43,7 @@ section{
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    background-color: var(--bg);
 }
 
 .navbar a{
@@ -59,7 +60,8 @@ section{
     display: block; 
     position: absolute; 
     bottom: -0.1rem; 
-    left: 0; width: 100%; 
+    left: 0; 
+    width: 100%; 
     border-bottom: 0.1rem solid transparent; 
     transition: border-bottom-color 0.2s; 
 }
@@ -87,12 +89,16 @@ section{
 
 .btn{
     background: var(--main-color);
-    color: #fff;
+    color: var(--white);
     padding: 1rem 3rem;
     font-size: 1.7rem;
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block; /* Remove a quebra de linha */
+}
+
+.btn:hover{
+    letter-spacing: 0.1rem;
 }
 
 .home-container{
@@ -112,12 +118,12 @@ section{
 }
 
 .content h3{
-    color: #fff;
+    color: var(--white);
     font-size: 6rem;
 }
 
 .content p{
-    color: #fff;
+    color: var(--white);
     font-size: 2rem;
     font-weight: 100;
     line-height: 1.8;
@@ -125,13 +131,66 @@ section{
 }
 
 .title{
-    color: #fff;
+    color: var(--main-color);
     text-align: center;
     font-size: 4rem;
-    padding-bottom: 2rem;
-    
+    text-transform: uppercase;
+    margin-bottom: 3rem;
 }
 
 .title span{
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+    
+}
+
+.about .row .content{
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: var(--white);
+    padding: 1rem 0;
+    line-height: 1.8; /* Espaçamento entre linhas */
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  
+}
+
+.menu .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+}
+
+.menu .box-container .box img{
+   height: 10rem;
+}
+.menu .box-container .box h3{
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
     color: var(--main-color);
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
 }
