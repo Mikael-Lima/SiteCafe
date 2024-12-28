@@ -257,10 +257,26 @@ section{
     padding: 1rem 0;
 }
 
-.share a{
-    margin: 0 2rem;
+.share a {
     color: var(--white);
+    margin: 0 0.5rem; 
+    border-radius: 50%; /* Mantém o background arredondado */
+    padding: 1rem;
+    display: inline-block;
+    width: 4rem; /* Define a largura do elemento */
+    height: 4rem; /* Define a altura do elemento */
+    text-align: center; /* Centraliza o conteúdo */
+    line-height: 4rem; /* Alinha verticalmente o ícone */
+    transition: background-color 0.3s ease, background-size 0.3s ease, border-radius 0.3s ease;
 }
+
+.share a:hover {
+    background-color: var(--main-color); /* Cor de fundo ao passar o mouse */
+    border-radius: 50%; /* Garante que o background se mantenha redondo ao passar o mouse */
+    background-size: 110%; /* Aumenta o tamanho do fundo ao passar o mouse */
+}
+
+
 
 
 
