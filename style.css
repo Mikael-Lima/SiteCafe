@@ -167,7 +167,7 @@ section{
     line-height: 1.8; /* Espaçamento entre linhas */
 }
 
-.menu .box-container{
+.box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -211,4 +211,56 @@ section{
     color: var(--black);
     
 }
+
+.review .box-container .box{
+    border: var(--border);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.review .box-container .box p{
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+.review .box-container .box h3{
+    color: var(--main-color);
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.review .box-container .box .user{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.address iframe{
+    border:0;
+}
+
+.footer{
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.share a{
+    margin: 0 2rem;
+    color: var(--white);
+}
+
+
 
